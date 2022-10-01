@@ -24,8 +24,8 @@ PAGENUMSTR = "?page="
 CTRLSTR = "&pageSize=100&sortBy=oldest"
 
 # Seekout LOGIN CREDS
-EMAIL = "dmitry@moonhub.xyz"
-PASSWD = "!DmitryPerkinMH22"
+EMAIL = "example@mail.com"
+PASSWD = "password123"
 
 # Change the Starting Page Number
 STARTFROM = 140
