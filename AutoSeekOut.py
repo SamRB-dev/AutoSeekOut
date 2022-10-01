@@ -71,7 +71,7 @@ class Scrape:
 			firefox = webdriver.Firefox(service=driver)
 			return firefox
 		except Exception as err:
-			print(err.message)
+			print(err)
 
 	def __login(self): #Private Method
 		try:
@@ -87,7 +87,7 @@ class Scrape:
 			handler.find_element(By.XPATH,"/html/body/div[1]/div/div/div[1]/div[1]/div/form/button").click()
 			return handler
 		except Exception as err:
-			print(err.message)
+			print(err)
 
 	def __getDetails(self,name,role,company,location,linkedin):
 		print(f"{self.PAGE}")
@@ -96,7 +96,7 @@ class Scrape:
 		print(f"{company}")
 		print(f"{location}")
 		print(f"{linkedin}")
-		print("=" * 70)
+		print("=" * 75)
 
 	#def __scroll(self,handler,height):
 
@@ -156,7 +156,7 @@ class Scrape:
 					print(f"Total Candidates: {total}")
 					print(f"Added: {added}")
 					self.PAGE += 1
-					print("-x-" * 70)
+					print("-x-" * 40)
 			handler.close()
 		except Exception as err:
 			print(err.message)
