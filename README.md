@@ -20,3 +20,15 @@ No matter which operating system you are using, you need to download the web dri
 * [Safari](https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari)
 
 #### Creating a Virtual Environment
+It's always a good idea to run code in a virtual environment. In order to create a python environment type -
+* For Python 3.7 or above
+  * pip3 install virtualenv
+Now to create an environment using virtualenv 
+* python3 -m venv <name of your environment> or,
+* python -m venv <name of your environment>
+To activate the environment:
+* Linux/MacOS
+  - source path/<name of your environment>/bin/activate
+* Windows
+  - path\to\your\env\Scripts\activate
+To deactivate the environment, simply type deactivate
