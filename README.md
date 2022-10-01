@@ -4,7 +4,10 @@ Purely written in **Python** and **Selenium**. It will generate generate a CSV f
 with all data scraped from *Seekout*. 
 
 ## Tested On
-* Linux
+1. Linux
+..1. Debian
+....* Parrot OS Release 5.1 (Electro Ara) 64-bit
+
 
 
 ## Installation
