@@ -29,9 +29,9 @@ It's always a good idea to run code in a virtual environment. In order to create
   * pip3 install virtualenv
 
 Now to create an environment using virtualenv 
-* python3 -m venv <name of your environment> 
+* python3 -m venv env_name 
 or,
-* python -m venv <name of your environment>
+* python -m venv env_name
 
 To activate the environment:
 * Linux/MacOS
@@ -65,7 +65,8 @@ Lastly, to get the script up and running, you need to make few changes in the sc
 5. On line 37 (TITLE) variable, set the title to the title of the project data page so that the bot can identify the project. i.e If the project title is "Projects/Database - Intuit" then you will set the variable as 
   * TITLE = "Intuit"
 
-6. Lastly, on line 40 (FILE) variable, set the file name as your desired file name.
+6. Lastly, on line 40 (FILE) variable, set the file name as your desired file name. i.e.
+  * FILE = "Intuit.csv"
 
 ### Run the script in CMD/terminal
 ```
