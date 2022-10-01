@@ -35,7 +35,7 @@ or,
 
 To activate the environment:
 * Linux/MacOS
-  - source path/<name of your environment>/bin/activate
+  - source path/env_name/bin/activate
 * Windows
   - path\to\your\env\Scripts\activate
 
