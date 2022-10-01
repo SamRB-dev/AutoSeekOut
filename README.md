@@ -5,8 +5,8 @@ with all data scraped from *Seekout*.
 
 ## Tested On
 1. Linux
-..1. Debian
-....* Parrot OS Release 5.1 (Electro Ara) 64-bit
+  1. Debian
+    * Parrot OS Release 5.1 (Electro Ara) 64-bit
 
 
 
