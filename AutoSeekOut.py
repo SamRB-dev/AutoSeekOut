@@ -12,26 +12,26 @@ except ModuleNotFoundError as e:
 
 """ Necessary Global Variables """
 # Driver Path
-DPATH = "/home/pentester/Desktop/upwork/MyScript/geckodriver"
+DPATH:str = "geckodriver.exe"
 
 # Change URL
-URL = "https://app.seekout.io/project/cf3ec799-9f29-4069-a29c-6d034b69fe59"
+URL:str = "https://app.seekout.io/project/cf3ec799-9f29-4069-a29c-6d034b69fe59"
 
 # Page Number parameter for the URL
-PAGENUMSTR = "?page="
+PAGENUMSTR:str = "?page="
 
 # PageSize -> Data per page; sortBy -> oldest to newest
-CTRLSTR = "&pageSize=100&sortBy=oldest"
+CTRLSTR:str = "&pageSize=100&sortBy=oldest"
 
 # Seekout LOGIN CREDS
-EMAIL = "example@mail.com"
-PASSWD = "password123"
+EMAIL:str = "example@mail.com"
+PASSWD:str = "password123"
 
 # Change the Starting Page Number
-STARTFROM = 140
+STARTFROM:int = 140
 
 # Change the limit of the Page Iteration. It should be the last page number of the project.
-LIMIT = 142
+LIMIT:int = 142
 
 # Change Title of the project
 TITLE = "Intuit"
