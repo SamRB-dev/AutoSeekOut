@@ -12,7 +12,7 @@ except ModuleNotFoundError as e:
 
 """ Necessary Global Variables """
 # Driver Path
-DPATH:str = "geckodriver.exe"
+DPATH:str = "/home/pentester/Desktop/upwork/Backup/geckodriver"
 
 # Change URL
 URL:str = "https://app.seekout.io/project/cf3ec799-9f29-4069-a29c-6d034b69fe59"
@@ -31,13 +31,13 @@ PASSWD:str = "password123"
 STARTFROM:int = 140
 
 # Change the limit of the Page Iteration. It should be the last page number of the project.
-LIMIT:int = 142
+LIMIT:int = 141
 
 # Change Title of the project
-TITLE = "Intuit"
+TITLE:str = "Intuit"
 
 # Change File Name. The script will save the data in one CSV. It has to be cleaned and divided.
-FILE = "Intuit.csv"
+FILE:str = "Intuit.csv"
 
 #Main Class
 class Scrape:
@@ -156,11 +156,29 @@ class Scrape:
 					print(f"Total Candidates: {total}")
 					print(f"Added: {added}")
 					self.PAGE += 1
-					print("-x-" * 40)
+					print("-x-" * 30)
 			handler.close()
 		except Exception as err:
 			print(err.message)
+
+	def Clean(self):
+		try:
+			# Reading all lines the raw saved file
+			main = open(FILE,mode='r')
+			lines = main.readlines()
+			main.close()
+			# Making a clean file
+			dupstr = ",name,linkedin,role,company,location\n"
+			cleaned = open(f"{TITLE}-cleaned.csv",'a')
+			cleaned.write(f"{dupstr}")
+			for line in lines:
+				if line != dupstr:
+					cleaned.write(line)
+			cleaned.close()
+		except Exception as err:
+			print(err)
 		
 if __name__ == "__main__":
 	bot = Scrape()
 	bot.Scrape()
+	bot.Clean()
