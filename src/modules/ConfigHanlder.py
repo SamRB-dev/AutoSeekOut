@@ -48,3 +48,8 @@ class ConfigHanlder:
                     "loginPassword": None
                 }, file, indent=4
             )
+        self.__isconfigured = False
+
+    def writeConfigFile(self) -> None:
+        if (self.__isconfigured == True):
+            configparser.
