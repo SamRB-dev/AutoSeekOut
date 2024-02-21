@@ -1,0 +1,11 @@
+2024-02-18 14:48:12,435:ERROR:root:cannot import name 'ConfigHanlde' from 'src.modules.config' (/home/samrbdev/Desktop/Projects/AutoSeekOut/src/modules/config.py)
+2024-02-18 15:01:49,471:ERROR:root:cannot import name 'ConfigHanlde' from 'src.modules.config' (/home/samrbdev/Desktop/Projects/AutoSeekOut/src/modules/config.py)
+Traceback (most recent call last):
+  File "/home/samrbdev/Desktop/Projects/AutoSeekOut/setup.py", line 12, in <module>
+    from src.modules.config import ConfigHanlde
+ImportError: cannot import name 'ConfigHanlde' from 'src.modules.config' (/home/samrbdev/Desktop/Projects/AutoSeekOut/src/modules/config.py)
+2024-02-18 15:10:00,979:ERROR:root:cannot import name 'ConfigHanlde' from 'src.modules.config' (/home/samrbdev/Desktop/Projects/AutoSeekOut/src/modules/config.py)
+Traceback (most recent call last):
+  File "/home/samrbdev/Desktop/Projects/AutoSeekOut/setup.py", line 12, in <module>
+    from src.modules.config import ConfigHanlde
+ImportError: cannot import name 'ConfigHanlde' from 'src.modules.config' (/home/samrbdev/Desktop/Projects/AutoSeekOut/src/modules/config.py)

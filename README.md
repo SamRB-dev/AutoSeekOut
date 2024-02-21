@@ -1,4 +1,5 @@
 # AutoSeekOut
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 A simple, cross-platform web scraping *tool/bot* to scrape data from [Seekout](https://seekout.com/).
 Purely written in **Python** and **Selenium**. It will generate generate a CSV file 
 with all data scraped from *Seekout*. 
